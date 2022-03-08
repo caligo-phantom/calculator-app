@@ -24,3 +24,25 @@ input {
 .btn00 {
     margin-left: 0;
 }
+
+@media (max-width: 992px){
+    * {
+        font-size: 0.75rem;
+    }
+
+    .display {
+        width: 16.72813rem;
+        font-size: 1.33rem;
+    }
+
+    .btn {
+        padding: 1rem;
+        margin: 0.33rem;
+        padding-left: 1.33rem;
+        padding-right: 1.33rem;
+    }
+
+    .btn00 {
+        margin-left: 0;
+    }
+  }
