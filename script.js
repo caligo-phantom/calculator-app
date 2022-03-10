@@ -14,7 +14,12 @@ function multiply(a, b) {
 };
 
 function divide(a, b) {
-    return (a / b);
+    if(b == 0) {
+        alert("Division by 0 is invalid");
+    }
+    else {
+        return (a / b);
+    }
 };
 
 function operate(operator, a, b) {
@@ -33,25 +38,25 @@ function operate(operator, a, b) {
 }
 
 function storeInputAdd() {
-    a = parseInt(document.getElementById("display").value);
+    a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("add").textContent;
 }
 
 function storeInputSub() {
-    a = parseInt(document.getElementById("display").value);
+    a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("subtract").textContent;
 }
 
 function storeInputMul() {
-    a = parseInt(document.getElementById("display").value);
+    a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("multiply").textContent;
 }
 
 function storeInputDiv() {
-    a = parseInt(document.getElementById("display").value);
+    a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("divide").textContent;
 }
@@ -106,8 +111,13 @@ function getNum0() {
     document.getElementById("display").value += str;
 }
 
+function getNumFloat() {
+    let str = document.getElementById("btnFloat").textContent;
+    document.getElementById("display").value += str;
+}
+
 function equalTo() {
-    b = parseInt(document.getElementById("display").value);
+    b = parseFloat(document.getElementById("display").value);
     operate(operator, a, b);
 }
 
