@@ -41,24 +41,28 @@ function storeInputAdd() {
     a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("add").textContent;
+    document.getElementById("btnFloat").disabled = false;
 }
 
 function storeInputSub() {
     a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("subtract").textContent;
+    document.getElementById("btnFloat").disabled = false;
 }
 
 function storeInputMul() {
     a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("multiply").textContent;
+    document.getElementById("btnFloat").disabled = false;
 }
 
 function storeInputDiv() {
     a = parseFloat(document.getElementById("display").value);
     document.getElementById("display").value = " ";
     operator = document.getElementById("divide").textContent;
+    document.getElementById("btnFloat").disabled = false;
 }
 
 function getNum1() {
@@ -114,6 +118,7 @@ function getNum0() {
 function getNumFloat() {
     let str = document.getElementById("btnFloat").textContent;
     document.getElementById("display").value += str;
+    document.getElementById("btnFloat").disabled = true;
 }
 
 function equalTo() {
