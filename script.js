@@ -2,15 +2,15 @@ let operator = " ";
 let a = 0, b = 0;
 
 function add(a, b) {
-    return (a + b);
+    return ((a + b).toFixed(5));
 };
 
 function subtract(a, b) {
-    return (a - b);
+    return ((a - b).toFixed(5));
 };
 
 function multiply(a, b) {
-    return (a * b);
+    return ((a * b).toFixed(5));
 };
 
 function divide(a, b) {
@@ -18,7 +18,7 @@ function divide(a, b) {
         alert("Division by 0 is invalid");
     }
     else {
-        return (a / b);
+        return ((a / b).toFixed(5));
     }
 };
 
