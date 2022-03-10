@@ -14,36 +14,36 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="position-absolute top-50 start-50 translate-middle">
-        <div>
+    <div class="position-absolute top-50 start-50 translate-middle" style="background-color: red; padding: 1rem;">
+        <div class="text-center" style="background-color: red;">
             <input type="text" name="Input" id="display" class="display">  
         </div>
-        <div>
-            <button type="button" class="btn00 btn btn-secondary" onClick="window.location.reload();">C</button>
+        <div class="text-center" style="background-color: red;">
+            <button type="button" class="btn btn-secondary" onClick="window.location.reload();">C</button>
             <button type="button" class="btn btn-light" disabled>&nbsp;</button>
             <button id="backspace" type="button" class="btn btn-secondary" onclick="back()">B</button>
             <button id="add" type="button" class="btn btn-secondary" onclick="storeInputAdd()">+</button>
         </div>
-        <div>
-            <button id="btn7" type="button" class="btn00 btn btn-light" onclick = "getNum7()">7</button>
+        <div class="text-center" style="background-color: red;">
+            <button id="btn7" type="button" class="btn btn-light" onclick = "getNum7()">7</button>
             <button id="btn8" type="button" class="btn btn-light" onclick = "getNum8()">8</button>
             <button id="btn9" type="button" class="btn btn-light" onclick = "getNum9()">9</button>
             <button id="subtract" type="button" class="btn btn-secondary" onclick="storeInputSub()">-</button>
         </div>
-        <div>
-            <button id="btn4" type="button" class="btn00 btn btn-light" onclick = "getNum4()">4</button>
+        <div class="text-center" style="background-color: red;">
+            <button id="btn4" type="button" class="btn btn-light" onclick = "getNum4()">4</button>
             <button id="btn5" type="button" class="btn btn-light" onclick = "getNum5()">5</button>
             <button id="btn6" type="button" class="btn btn-light" onclick = "getNum6()">6</button>
             <button id="multiply" type="button" class="btn btn-secondary" onclick="storeInputMul()">*</button>
         </div>
-        <div>
-            <button id="btn1" type="button" class="btn00 btn btn-light" onclick = "getNum1()">1</button>
+        <div class="text-center" style="background-color: red;">
+            <button id="btn1" type="button" class="btn btn-light" onclick = "getNum1()">1</button>
             <button id="btn2" type="button" class="btn btn-light" onclick = "getNum2()">2</button>
             <button id="btn3" type="button" class="btn btn-light" onclick = "getNum3()">3</button>
             <button id="divide" type="button" class="btn btn-secondary" onclick="storeInputDiv()">/</button>
         </div>
-        <div>
-            <button type="button" class="btn00 btn btn-light" disabled>&nbsp;</button>
+        <div class="text-center" style="background-color: red;">
+            <button type="button" class="btn btn-light" disabled>&nbsp;</button>
             <button id="btn0" type="button" class="btn btn-light" onclick = "getNum0()">0</button>
             <button id="btnFloat" type="button" class="btn btn-light" onclick="getNumFloat()">.</button>
             <button type="button" class="btn btn-secondary" onclick="equalTo()">=</button>
