@@ -34,12 +34,8 @@ input {
 
     .btn {
         padding: 1rem;
-        margin: 0.1rem;
-        padding-left: 1.33rem;
-        padding-right: 1.33rem;
-    }
-
-    .btn00 {
-        margin-left: 0;
+        margin: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
   }
