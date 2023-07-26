@@ -1,3 +1,3 @@
 # Calculator App
 Made with :heart: by Siddharth Mittal
-Hosted @ https://caligo-phantom.github.io/calculator-app/
+Hosted @ https://sidmittal32.github.io/calculator-app/
